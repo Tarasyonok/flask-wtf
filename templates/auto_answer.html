@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/auto_answer.css') }}">
+  {% if list_type == 'ol' %}<ol>{% else %}<ul>{% endif %}
+  {% for prof, name in fields %}
+    <li>{{ prof }}: {{ name }}</li>
+  {% endfor %}
+  {% if list_type == 'ol' %}</ol>{% else %}</ul>{% endif %}
+{% endblock %}

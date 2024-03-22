@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% set member = members|random %}
+
+  <h2 class="text-center">{{ member.name }}</h2>
+
+  <p class="text-center">
+    <img width="800" src="{{ member.image }}" alt="" />
+  </p>
+
+  <p class="text-center">
+    {{ member.profs|join(',') }}
+  </p>
+
+{% endblock %}

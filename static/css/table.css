@@ -1,0 +1,29 @@
+.walls {
+    width: 100%;
+    display: block;
+    height: 300px;
+}
+
+.ma {
+    background-color: #00f !important;
+}
+
+.my {
+    background-color: #88f !important;
+}
+
+.fa {
+    background-color: #f00 !important;
+}
+
+.fy {
+    background-color: #f88 !important;
+}
+
+.image {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+}

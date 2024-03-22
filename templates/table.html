@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/table.css') }}">
+
+  <h2 class="text-center">Оформление каюты</h2>
+  <h4>Марсианин</h4>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Цвет стен</th>
+        <th scope="col">Эмблема</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="walls {{ walls_color }}"></td>
+        <td class="image">
+          {% if image == 'b' %}
+            <img src="{{ url_for('static', filename='images/big_zerg.jpg') }}" alt="">
+          {% else %}
+            <img src="{{ url_for('static', filename='images/small_zerg.jpg') }}" alt="">
+          {% endif %}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+{% endblock %}

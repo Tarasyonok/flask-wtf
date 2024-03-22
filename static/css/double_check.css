@@ -1,0 +1,14 @@
+.mission {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    background: url("/static/images/mission.png");
+    width: 150px;
+    height: 50px;
+    display: block;
+}

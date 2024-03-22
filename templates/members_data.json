@@ -1,0 +1,5 @@
+[
+  {"id": 1, "name": "Ридли Скотт", "image": "../static/images/cards/1.jpg", "profs": ["капитан экспедиции", "инжинер", "строитель"]},
+  {"id": 2, "name": "Энди Уир", "image": "../static/images/cards/2.jpg", "profs": ["астрогеолог", "специалист по радиацианальной защите"]},
+  {"id": 3, "name": "Марк Уотни", "image": "../static/images/cards/3.jpg", "profs": ["врач", "биолог"]}
+]

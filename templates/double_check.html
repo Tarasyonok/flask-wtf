@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/double_check.css') }}">
+  
+  <div class="mission">
+    <i class="logo"></i>
+    <h2 class="text-center">Аварийный доступ</h2>
+  </div>
+
+  <form>
+    <div class="mb-3">
+      <label class="form-label">
+        <p>Id астронавта</p>
+        <input type="number" class="form-control" />
+      </label>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">
+        <p>Пароль астронавта</p>
+        <input type="password" class="form-control" />
+      </label>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">
+        <p>Id капитана</p>
+        <input type="number" class="form-control" />
+      </label>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">
+        <p>Пароль капитана</p>
+        <input type="password" class="form-control" />
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Доступ</button>
+  </form>
+{% endblock %}

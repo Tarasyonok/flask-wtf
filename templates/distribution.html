@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2 class="text-center">Размещение по каютам</h2>
+    {% for name in names %}
+      <p>{{ name }} - Каюта №{{ loop.index }}
+        {% if loop.index == 1 %}- капитан коробля{% endif %}</p>
+    {% endfor %}
+{% endblock %}
